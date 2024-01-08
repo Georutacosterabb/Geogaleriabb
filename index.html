@@ -111,6 +111,9 @@ max-width: 90%;
   .no-mobile {
     display: none;
   }
+        .geositio h2 {
+        text-align: center;
+      }
 
   /* Cambiar el tamaño de las imágenes */
   img {
@@ -270,15 +273,15 @@ max-width: 90%;
     <div>
     <section id="geositios">
         <h2>Geositios</h2>
+        //////////////////////////////////////////////BURCA/////////////////////////////////////////////////////
         <div class="geositio" id="geositio1">
-            <h3>Burca</h3>
+               <h2>Burca</h2> 
     <video src="Burca/GEOSITIO_PLAYA BURCA_V1.mp4" controls>
     </video>
  <p>Pequeña playa de arena muy gruesa, con abundante zona rocosa y un estero que desemboca en esta zona. Siguiendo por la línea de costa al sur de esta playa aún hay vestigios de donde se quemaban las conchas de mar para sacar nitrato para fertilizante, los conocidos Hornos de Burca que son una construcción patrimonial de la Comuna. </p>
            
 <body>
 
-<h2 style="text-align:center">Slideshow Gallery</h2>
 
 <div class="container" style="margin: 0 auto;">
   <div class="mySlides">
@@ -377,8 +380,329 @@ function showSlides(n) {
             <p>En esta pequeña caleta afloran rocas metamórficas con un alto grado de erosión marina que sumado a la foliación y disposición interna vertical de la roca resultan en una estructura denominada "escama de pez". Además en este sitio desemboca un Estero.</p>
     
         </div>
+        /////////////////////////////////////////////////////////Caleta Chica Cocholgue///////////////////////////////////////////////////////////
         <div class="geositio" id="geositio2">
-            <h3>Caleta Chica  Cocholgüe</h3>
+           <h2 style="text-align:center">Caleta Chica  Cocholgüe</h2> 
+             <video src="Burca/GEOSITIO_PLAYA BURCA_V1.mp4" controls>
+    </video>
+ <p>Esta caleta presenta una alta afluencia de público debido a la variedad gastronómica y de deportes nauticos que se desarrollan. Para realizar una óptima visualización se debe recorrer por el borde costero hacia el sur.</p>
+           
+<body>
+
+<div class="container" style="margin: 0 auto;">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="Burca/1500214739-920x600.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="Burca/DSC_0351_351.JPG" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="Burca/IMG_3440.JPG" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="Burca/IMG_3436.JPG" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="Burca/DJI_0353.JPG" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="Burca/1500214739-920x600.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Burca/1500214739-920x600.jpg" style="width:100%" onclick="currentSlide(1)" title="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Burca/DSC_0351_351.JPG" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Burca/IMG_3440.JPG" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Burca/IMG_3436.JPG" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Burca/DJI_0353.JPG" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="Burca/1500214739-920x600.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
+            
+            <p>Se observan acantilados con afloramientos de la Formación Curanilahue, donde se pueden reconocer niveles carbonaceos acuñados, terminación entre estratos tipo onlap y estructuras sedimentarias hummocky por lo que se hace idoneo este sitio para desarrollar temáticas sedimentológicas y estratigráficas. En la zona intermareal se pueden observar algunos escollos rocosos y plataforma de abrasión, además de aflorar 
+material metamórfico.</p>
+    
+        </div>
+/////////////////////////////////////////CALETA GRANDE COCHOLGUE/////////////////////////////////////////////////////
+        <div class="geositio" id="geositio3">
+            <h2>Caleta Grande Cocholgüe</h2>
+               <video src="Burca/GEOSITIO_PLAYA BURCA_V1.mp4" controls>
+    </video>
+ <p>El ingreso al sendero se realiza por una pequeña caleta de pescadores, hacia el norte y luego de recorrer unos 20 minutos se llega a los afloramientos más significativos de este punto, además se puede disfrutar de una playa con poca afluencia de público de arenas blancas.</p>
+           
+<body>
+
+<div class="container" style="margin: 0 auto;">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="Burca/1500214739-920x600.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="Burca/DSC_0351_351.JPG" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="Burca/IMG_3440.JPG" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="Burca/IMG_3436.JPG" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="Burca/DJI_0353.JPG" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="Burca/1500214739-920x600.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Burca/1500214739-920x600.jpg" style="width:100%" onclick="currentSlide(1)" title="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Burca/DSC_0351_351.JPG" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Burca/IMG_3440.JPG" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Burca/IMG_3436.JPG" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Burca/DJI_0353.JPG" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="Burca/1500214739-920x600.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
+            
+            <p>A lo largo del sendero se pueden ir identificando distintas litologías y estructuras  tanto sedimentarias como de deformación, en esta zona se pueden ver a lo menos 4 CGT que son el Complejo Metamórfico Paleozoico, Depósitos Sedimentarios del Maastrichtiano, Depósitos Parálicos del Paleógeno y morfoestructuras de Norde costero como acantilados, arcos, escollos rocosos y plataformas de abrasión. </p>
+    
+        </div>
+      //////////////////////////////////////CALETA NECOCHEA/////////////////////////////////
+        <div class="geositio" id="geositio4">
+            <h2>Caleta Necochea</h2>
+              <video src="Burca/GEOSITIO_PLAYA BURCA_V1.mp4" controls>
+    </video>
+ <p>El ingreso al sendero se realiza por una pequeña caleta de pescadores, hacia el norte y luego de recorrer unos 20 minutos se llega a los afloramientos más significativos de este punto, además se puede disfrutar de una playa con poca afluencia de público de arenas blancas.</p>
+           
+<body>
+
+<div class="container" style="margin: 0 auto;">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="Burca/1500214739-920x600.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="Burca/DSC_0351_351.JPG" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="Burca/IMG_3440.JPG" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="Burca/IMG_3436.JPG" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="Burca/DJI_0353.JPG" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="Burca/1500214739-920x600.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Burca/1500214739-920x600.jpg" style="width:100%" onclick="currentSlide(1)" title="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Burca/DSC_0351_351.JPG" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Burca/IMG_3440.JPG" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Burca/IMG_3436.JPG" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Burca/DJI_0353.JPG" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="Burca/1500214739-920x600.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
+            
+            <p>A lo largo del sendero se pueden ir identificando distintas litologías y estructuras  tanto sedimentarias como de deformación, en esta zona se pueden ver a lo menos 4 CGT que son el Complejo Metamórfico Paleozoico, Depósitos Sedimentarios del Maastrichtiano, Depósitos Parálicos del Paleógeno y morfoestructuras de Norde costero como acantilados, arcos, escollos rocosos y plataformas de abrasión. </p>
+    
+        </div>
+      
+        <div class="geositio" id="geositio5">
+            <h2>Caleta Villarica
+            </h2>
               <h2>Características Principales
             </h2>
             <p>Sin datos</p>
@@ -387,6 +711,208 @@ function showSlides(n) {
             <p>Sin datos.</p>
             <img src="imagen.jpg" alt="Imagen de Geositio 2">
             <audio src="narración2.mp3" controls></audio>
+        </div>
+        <div class="geositio" id="geositio6">
+            <h2>Casa Piedra
+            </h2>
+            <h2>Características Principales
+            </h2>
+            <p>Sin datos</p>
+            <h2>Descripción
+            </h2>
+            <p>Sin datos.</p>
+            <img src="imagen.jpg" alt="Imagen de Geositio 2">
+            <audio src="narración2.mp3" controls></audio>
+        </div>
+        <div class="geositio" id="geositio7">
+            <h2>Cascada La Leonera
+            </h2>
+             <h2>Características Principales
+            </h2>
+            <p>Sin datos</p>
+            <h2>Descripción
+            </h2>
+            <p>Sin datos.</p>
+            <img src="imagen.jpg" alt="Imagen de Geositio 2">
+            <audio src="narración2.mp3" controls></audio>
+        </div>
+        <div class="geositio" id="geositio8">
+            <h2>Merquiche
+            </h2>
+             <h2>Características Principales
+            </h2>
+            <p>Sin datos</p>
+            <h2>Descripción
+            </h2>
+            <p>Sin datos.</p>
+            <img src="imagen.jpg" alt="Imagen de Geositio 2">
+            <audio src="narración2.mp3" controls></audio>
+        </div>
+        <div class="geositio" id="geositio4">
+            <h2>Caleta Necochea</h2>
+              <h2>Características Principales
+            </h2>
+            <p>Sin datos</p>
+            <h2>Descripción
+            </h2>
+            <p>Sin datos.</p>
+            <img src="imagen.jpg" alt="Imagen de Geositio 2">
+            <audio src="narración2.mp3" controls></audio>
+        </div>
+        <div class="geositio" id="geositio5">
+            <h2>Caleta Villarica
+            </h2>
+              <h2>Características Principales
+            </h2>
+            <p>Sin datos</p>
+            <h2>Descripción
+            </h2>
+            <p>Sin datos.</p>
+            <img src="imagen.jpg" alt="Imagen de Geositio 2">
+            <audio src="narración2.mp3" controls></audio>
+        </div>
+        <div class="geositio" id="geositio6">
+            <h2>Casa Piedra
+            </h2>
+            <h2>Características Principales
+            </h2>
+            <p>Sin datos</p>
+            <h2>Descripción
+            </h2>
+            <p>Sin datos.</p>
+            <img src="imagen.jpg" alt="Imagen de Geositio 2">
+            <audio src="narración2.mp3" controls></audio>
+        </div>
+        <div class="geositio" id="geositio7">
+            <h2>Cascada La Leonera
+            </h2>
+             <h2>Características Principales
+            </h2>
+            <p>Sin datos</p>
+            <h2>Descripción
+            </h2>
+            <p>Sin datos.</p>
+            <img src="imagen.jpg" alt="Imagen de Geositio 2">
+            <audio src="narración2.mp3" controls></audio>
+        </div>
+        <div class="geositio" id="geositio8">
+            <h3>Merquiche
+            </h3>
+             <h2>Características Principales
+            </h2>
+            <p>Sin datos</p>
+            <h2>Descripción
+            </h2>
+            <p>Sin datos.</p>
+            <img src="imagen.jpg" alt="Imagen de Geositio 2">
+            <audio src="narración2.mp3" controls></audio>
+        </div>
+        <div class="geositio" id="geositio9">
+            <h3>Mirador del Inglés
+            </h3>
+              <video src="Burca/GEOSITIO_PLAYA BURCA_V1.mp4" controls>
+    </video>
+ <p>Esta caleta presenta una alta afluencia de público debido a la variedad gastronómica y de deportes nauticos que se desarrollan. Para realizar una óptima visualización se debe recorrer por el borde costero hacia el sur.</p>
+           
+<body>
+
+<div class="container" style="margin: 0 auto;">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="Burca/1500214739-920x600.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="Burca/DSC_0351_351.JPG" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="Burca/IMG_3440.JPG" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="Burca/IMG_3436.JPG" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="Burca/DJI_0353.JPG" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="Burca/1500214739-920x600.jpg" style="width:100%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="Burca/1500214739-920x600.jpg" style="width:100%" onclick="currentSlide(1)" title="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Burca/DSC_0351_351.JPG" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Burca/IMG_3440.JPG" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Burca/IMG_3436.JPG" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Burca/DJI_0353.JPG" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="Burca/1500214739-920x600.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    </div>
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+    
+</body>
+</html>
+            
+            <p>Se observan acantilados con afloramientos de la Formación Curanilahue, donde se pueden reconocer niveles carbonaceos acuñados, terminacion entre estratos tipo onlap y estructuras sedimentarias hummocky por lo que se hace idoneo este sitio para desarrollar temáticas sedimentológicas y estratigráficas. En la zona intermareal se pueden observar algunos escollos rocosos y plataforma de abrasión, además de aflorar 
+material metamórfico.</p>
+    
         </div>
         <div class="geositio" id="geositio3">
             <h3>Caleta Grande Cocholgüe</h3>
@@ -455,18 +981,6 @@ function showSlides(n) {
             <h2>Descripción
             </h2>
             <p>Sin datos.</p>
-            <img src="imagen.jpg" alt="Imagen de Geositio 2">
-            <audio src="narración2.mp3" controls></audio>
-        </div>
-        <div class="geositio" id="geositio9">
-            <h3>Mirador del Inglés
-            </h3>
-             <h2>Características Principales
-            </h2>
-            <p>Mirador del Inglés es una parada en la carretera entre las playas de Burca y Purema. La zona tiene una vista panorámica de la costa, afloramientos metamórficos y sus acantilados.</p>
-             <h2>Descripción
-            </h2>
-            <p>Una buena parada para hacer un análisis geomorfológico de las morfoestructuras predominantes de relieves costeros. Se presentan acantilados y afloramientos del metamórfico. </p>
             <img src="imagen.jpg" alt="Imagen de Geositio 2">
             <audio src="narración2.mp3" controls></audio>
         </div>
