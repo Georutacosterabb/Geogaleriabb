@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geoparque</title>
 </head>
 <body>
@@ -265,6 +265,17 @@ max-width: 90%;
 .active,
 .demo:hover {
   opacity: 1;
+}
+    @media only screen and (max-width: 600px) {
+  /* Ocultar elementos que no son necesarios en dispositivos móviles */
+  .no-mobile {
+    display: none;
+  }
+
+  /* Cambiar el tamaño de las imágenes */
+  img {
+    width: 100%;
+  }
 }
 </style>
 <body>
