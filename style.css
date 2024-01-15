@@ -1,0 +1,1827 @@
+.slider {
+    width: 600px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .slide {
+    width: 600px;
+    height: 300px;
+    float: left;
+  }
+  
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  video {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .controls button {
+    width: 50px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .controls button:hover {
+    background-color: #000;
+    color: #fff;
+  }
+
+  
+/* Position the image container (needed to position the left and right arrows) */
+.container4 {
+  max-width: 100%;
+  position: relative;
+}
+.container3 {
+  max-width: 100%;
+  position: relative;
+}
+.container2 {
+  max-width: 100%;
+  position: relative;
+}
+.container1 {
+  max-width: 100%;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides4 {
+  display: none;
+}
+.mySlides3 {
+  display: none;
+}
+.mySlides2 {
+  display: none;
+}
+.mySlides1 {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor4 {
+  cursor: pointer;
+}
+.cursor3 {
+  cursor: pointer;
+}
+.cursor2 {
+  cursor: pointer;
+}
+.cursor1 {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev4,
+.next4 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev3,
+.next3 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev2,
+.next2 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev1,
+.next1 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next4 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.next3 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.next2 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.next1 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev4:hover,
+.next4:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.prev3:hover,
+.next3:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.prev2:hover,
+.next2:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.prev1:hover,
+.next1:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext4 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.numbertext3 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.numbertext2 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.numbertext1 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container4 {
+  text-align: justify;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.caption-container3 {
+  text-align: justify;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.caption-container2 {
+  text-align: justify;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.caption-container1 {
+  text-align: justify;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row4:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row3:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column4 {
+  float: left;
+  width: 16.66%;
+}
+.column3 {
+  float: left;
+  width: 16.66%;
+}
+.column2 {
+  float: left;
+  width: 16.66%;
+}
+.column1 {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumbnail images */
+.demo4 {
+  opacity: 0.6;
+}
+.demo3 {
+  opacity: 0.6;
+}
+.demo2 {
+  opacity: 0.6;
+}
+.demo1 {
+  opacity: 0.6;
+}
+
+.active4,
+.demo4:hover {
+  opacity: 1;
+}
+.active3,
+.demo3:hover {
+  opacity: 1;
+}
+.active2,
+.demo2:hover {
+  opacity: 1;
+}
+.active1,
+.demo1:hover {
+  opacity: 1;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container5 {
+  max-width: 100%;
+  position: relative;
+}
+.container6 {
+  max-width: 100%;
+  position: relative;
+}
+.container7 {
+  max-width: 100%;
+  position: relative;
+}
+.container8 {
+  max-width: 100%;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides5 {
+  display: none;
+}
+.mySlides6 {
+  display: none;
+}
+.mySlides7 {
+  display: none;
+}
+.mySlides8 {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor5 {
+  cursor: pointer;
+}
+.cursor6 {
+  cursor: pointer;
+}
+.cursor7 {
+  cursor: pointer;
+}
+.cursor8 {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev5,
+.next5 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev6,
+.next6 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev7,
+.next7 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev8,
+.next8 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next5 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.next6 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.next7 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.next8 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev5:hover,
+.next5:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.prev6:hover,
+.next6:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.prev7:hover,
+.next7:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.prev8:hover,
+.next8:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext5 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.numbertext6 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.numbertext7 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.numbertext8 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container5 {
+  text-align: justify;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.caption-container6 {
+  text-align: justify;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.caption-container7 {
+  text-align: justify;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.caption-container8 {
+  text-align: justify;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row5:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row6:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row7:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row8:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column5 {
+  float: left;
+  width: 16.66%;
+}
+.column6 {
+  float: left;
+  width: 16.66%;
+}
+.column7 {
+  float: left;
+  width: 16.66%;
+}
+.column8 {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumbnail images */
+.demo5 {
+  opacity: 0.6;
+}
+.demo6 {
+  opacity: 0.6;
+}
+.demo7 {
+  opacity: 0.6;
+}
+.demo8 {
+  opacity: 0.6;
+}
+
+.active5,
+.demo5:hover {
+  opacity: 1;
+}
+.active6,
+.demo6:hover {
+  opacity: 1;
+}
+.active7,
+.demo7:hover {
+  opacity: 1;
+}
+.active8,
+.demo8:hover {
+  opacity: 1;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container9 {
+  max-width: 100%;
+  position: relative;
+}
+.container11 {
+  max-width: 100%;
+  position: relative;
+}
+.container12 {
+  max-width: 100%;
+  position: relative;
+}
+.container13 {
+  max-width: 100%;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides9 {
+  display: none;
+}
+.mySlides11 {
+  display: none;
+}
+.mySlides12 {
+  display: none;
+}
+.mySlides13 {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor9 {
+  cursor: pointer;
+}
+.cursor11 {
+  cursor: pointer;
+}
+.cursor12 {
+  cursor: pointer;
+}
+.cursor13 {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev9,
+.next9 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev11,
+.next11 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev12,
+.next12 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev13,
+.next13 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next9 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.next11 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.next12 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.next13 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev9:hover,
+.next9:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.prev11:hover,
+.next11:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.prev12:hover,
+.next12:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.prev13:hover,
+.next13:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext9 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.numbertext11 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+ 
+}
+/* Number text (1/3 etc) */
+.numbertext11 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.numbertext12 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.numbertext13 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container9 {
+  text-align: justify;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.caption-container11 {
+  text-align: justify;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.caption-container12 {
+  text-align: justify;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.caption-container13 {
+  text-align: justify;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+/* Six columns side by side */
+.column9 {
+  float: left;
+  width: 16.66%;
+}
+.column11 {
+  float: left;
+  width: 16.66%;
+}
+.column12 {
+  float: left;
+  width: 16.66%;
+}
+.column13 {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumbnail images */
+.demo9 {
+  opacity: 0.6;
+}
+.demo11 {
+  opacity: 0.6;
+}
+.demo12 {
+  opacity: 0.6;
+}
+.demo13 {
+  opacity: 0.6;
+}
+
+/* Active class, for highlighting the current slide */
+.active9,
+.demo9:hover {
+  opacity: 1;
+}
+.active11,
+.demo11:hover {
+  opacity: 1;
+}
+.active12,
+.demo12:hover {
+  opacity: 1;
+}
+.active13,
+.demo13:hover {
+  opacity: 1;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container14 {
+  max-width: 100%;
+  position: relative;
+}
+.container15 {
+  max-width: 100%;
+  position: relative;
+}
+.container16 {
+  max-width: 100%;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides14 {
+  display: none;
+}
+.mySlides15 {
+  display: none;
+}
+.mySlides16 {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor14 {
+  cursor: pointer;
+}
+.cursor15 {
+  cursor: pointer;
+}
+.cursor16 {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev14,
+.next14 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev15,
+.next15 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev16,
+.next16 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next14 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.next15 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.next16 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev14:hover,
+.next14:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.prev15:hover,
+.next15:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.prev16:hover,
+.next16:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext14 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.numbertext15 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.numbertext16 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container14 {
+  text-align: justify;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.caption-container15 {
+  text-align: justify;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.caption-container16 {
+  text-align: justify;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+/* Six columns side by side */
+.column14 {
+  float: left;
+  width: 16.66%;
+}
+.column15 {
+  float: left;
+  width: 16.66%;
+}
+.column16 {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumbnail images */
+.demo14 {
+  opacity: 0.6;
+}
+.demo15 {
+  opacity: 0.6;
+}
+.demo16 {
+  opacity: 0.6;
+}
+
+/* Active class, for highlighting the current slide */
+.active14,
+.demo14:hover {
+  opacity: 1;
+}
+.active15,
+.demo15:hover {
+  opacity: 1;
+}
+.active16,
+.demo16:hover {
+  opacity: 1;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container17 {
+  max-width: 100%;
+  position: relative;
+}
+.container18 {
+  max-width: 100%;
+  position: relative;
+}
+.container19 {
+  max-width: 100%;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides17 {
+  display: none;
+}
+.mySlides18 {
+  display: none;
+}
+.mySlides19 {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor17 {
+  cursor: pointer;
+}
+.cursor18 {
+  cursor: pointer;
+}
+.cursor19 {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev17,
+.next17 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev18,
+.next18 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev19,
+.next19 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next17 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.next18 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.next19 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev17:hover,
+.next17:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.prev18:hover,
+.next18:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.prev19:hover,
+.next19:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext17 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.numbertext18 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.numbertext19 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container17 {
+  text-align: justify;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.caption-container18 {
+  text-align: justify;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.caption-container19 {
+  text-align: justify;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+/* Six columns side by side */
+.column17 {
+  float: left;
+  width: 16.66%;
+}
+.column18 {
+  float: left;
+  width: 16.66%;
+}
+.column19 {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumbnail images */
+.demo17 {
+  opacity: 0.6;
+}
+.demo18 {
+  opacity: 0.6;
+}
+.demo19 {
+  opacity: 0.6;
+}
+
+/* Active class, for highlighting the current slide */
+.active17,
+.demo17:hover {
+  opacity: 1;
+}
+.active18,
+.demo18:hover {
+  opacity: 1;
+}
+.active19,
+.demo19:hover {
+  opacity: 1;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container20 {
+  max-width: 100%;
+  position: relative;
+}
+.container21 {
+  max-width: 100%;
+  position: relative;
+}
+.container22 {
+  max-width: 100%;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides20 {
+  display: none;
+}
+.mySlides21 {
+  display: none;
+}
+.mySlides22 {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor20 {
+  cursor: pointer;
+}
+.cursor21 {
+  cursor: pointer;
+}
+.cursor22 {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev20,
+.next20 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev21,
+.next21 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev22,
+.next22 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next20 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.next21 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.next22 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev20:hover,
+.next20:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.prev21:hover,
+.next21:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.prev22:hover,
+.next22:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext20 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.numbertext21 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.numbertext22 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container20 {
+  text-align: justify;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.caption-container21 {
+  text-align: justify;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.caption-container22 {
+  text-align: justify;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+/* Six columns side by side */
+.column20 {
+  float: left;
+  width: 16.66%;
+}
+.column21 {
+  float: left;
+  width: 16.66%;
+}
+.column22 {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumbnail images */
+.demo20 {
+  opacity: 0.6;
+}
+.demo21 {
+  opacity: 0.6;
+}
+.demo22 {
+  opacity: 0.6;
+}
+
+/* Active class, for highlighting the current slide */
+.active20,
+.demo20:hover {
+  opacity: 1;
+}
+.active21,
+.demo21:hover {
+  opacity: 1;
+}
+.active22,
+.demo22:hover {
+  opacity: 1;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container23 {
+  max-width: 100%;
+  position: relative;
+}
+.container24 {
+  max-width: 100%;
+  position: relative;
+}
+.container25 {
+  max-width: 100%;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides23 {
+  display: none;
+}
+.mySlides24 {
+  display: none;
+}
+.mySlides25 {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor23 {
+  cursor: pointer;
+}
+.cursor24 {
+  cursor: pointer;
+}
+.cursor25 {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev23,
+.next23 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev24,
+.next24 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev25,
+.next25 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next23 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.next24 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.next25 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev23:hover,
+.next23:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.prev24:hover,
+.next24:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.prev25:hover,
+.next25:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext23 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.numbertext24 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.numbertext25 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container23 {
+  text-align: justify;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.caption-container24 {
+  text-align: justify;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.caption-container25 {
+  text-align: justify;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+/* Six columns side by side */
+.column23 {
+  float: left;
+  width: 16.66%;
+}
+.column24 {
+  float: left;
+  width: 16.66%;
+}
+.column25 {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumbnail images */
+.demo23 {
+  opacity: 0.6;
+}
+.demo24 {
+  opacity: 0.6;
+}
+.demo25 {
+  opacity: 0.6;
+}
+
+/* Active class, for highlighting the current slide */
+.active23,
+.demo23:hover {
+  opacity: 1;
+}
+.active24,
+.demo24:hover {
+  opacity: 1;
+}
+.active25,
+.demo25:hover {
+  opacity: 1;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container26 {
+  max-width: 100%;
+  position: relative;
+}
+.container27 {
+  max-width: 100%;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides26 {
+  display: none;
+}
+.mySlides27 {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor26 {
+  cursor: pointer;
+}
+.cursor27 {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev26,
+.next26 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.prev27,
+.next27 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next26 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.next27 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev26:hover,
+.next26:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.prev27:hover,
+.next27:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext26 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.numbertext27 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container26 {
+  text-align: justify;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+.caption-container27 {
+  text-align: justify;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+/* Six columns side by side */
+.column26 {
+  float: left;
+  width: 16.66%;
+}
+.column27 {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumbnail images */
+.demo26 {
+  opacity: 0.6;
+}
+.demo27 {
+  opacity: 0.6;
+}
+
+/* Active class, for highlighting the current slide */
+.active26,
+.demo26:hover {
+  opacity: 1;
+}
+.active27,
+.demo27:hover {
+  opacity: 1;
+}
+/* Position the image container (needed to position the left and right arrows) */
+.container10 {
+  max-width: 100%;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides10 {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor10 {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev10,
+.next10 {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next10 {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev10:hover,
+.next10:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext10 {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container10 {
+  text-align: justify;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+/* Six columns side by side */
+.column10 {
+  float: left;
+  width: 16.66%;
+}
+
+/* Add a transparency effect for thumbnail images */
+.demo10 {
+  opacity: 0.6;
+}
+
+/* Active class, for highlighting the current slide */
+.active10,
+.demo10:hover {
+  opacity: 1;
+}
