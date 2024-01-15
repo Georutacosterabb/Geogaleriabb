@@ -285,95 +285,63 @@ max-width: 100%;
  <p>Pequeña playa de arena muy gruesa, con abundante zona rocosa y un estero que desemboca en esta zona. Siguiendo por la línea de costa al sur de esta playa aún hay vestigios de donde se quemaban las conchas de mar para sacar nitrato para fertilizante, los conocidos Hornos de Burca que son una construcción patrimonial de la Comuna. </p>
            
 
-
-<div class="container" style="margin: 0 auto;">
-  <div class="mySlides1">
-    <div class="numbertext">1 / 6</div>
-    <img src="Burca/1500214739-920x600.jpg" style="width:100%">
+<div class="container1"  style="margin: 0 auto;">
+  <div  class="mySlides1">
+    <div class="numbertext">1 / 2</div>
+    <img src="D:\Proyecto_Geoparque\purema.jpg" style="width:100%">
   </div>
 
-  <div class="mySlides1">
-    <div class="numbertext">2 / 6</div>
-    <img src="Burca/DSC_0351_351.JPG" style="width:100%">
+  <div  class="mySlides1">
+    <div class="numbertext">2 / 2</div>
+    <img src="D:\Proyecto_Geoparque\WhatsApp-Image-2019-01-01-at-21.19.221.jpeg" style="width:100%">
   </div>
 
-  <div class="mySlides1">
-    <div class="numbertext">3 / 6</div>
-    <img src="Burca/IMG_3440.JPG" style="width:100%">
+  <a class="prev1" onclick="plusSlides1(-1)">❮</a>
+  <a class="next1" onclick="plusSlides1(1)">❯</a>
+
+  <div  class="caption-container1">
+    <p id="caption1"></p>
   </div>
+
+  <div class="row1">
+    <div class="column1">
+      <img class="demo1 cursor" src="Burca/1500214739-920x600.jpg" style="width:100%" onclick="currentSlide1(1)" alt="The Woods">
+    </div>
+    <div class="column">
+      <img class="demo1 cursor" src="Burca/DJI_0353.JPG" style="width:100%" onclick="currentSlide1(2)" alt="Cinque Terre">
+    </div>
     
-  <div class="mySlides1">
-    <div class="numbertext">4 / 6</div>
-    <img src="Burca/IMG_3436.JPG" style="width:100%">
-  </div>
-
-  <div class="mySlides1">
-    <div class="numbertext">5 / 6</div>
-    <img src="Burca/DJI_0353.JPG" style="width:100%">
-  </div>
-    
-  <div class="mySlides1">
-    <div class="numbertext">6 / 6</div>
-    <img src="Burca/1500214739-920x600.jpg" style="width:100%">
-  </div>
-    
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
-
-  <div class="caption-container">
-    <p id="caption"></p>
-  </div>
-
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="Burca/1500214739-920x600.jpg" style="width:100%" onclick="currentSlide(1)" title="The Woods">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="Burca/DSC_0351_351.JPG" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="Burca/IMG_3440.JPG" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="Burca/IMG_3436.JPG" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="Burca/DJI_0353.JPG" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-    </div>    
-    <div class="column">
-      <img class="demo cursor" src="Burca/1500214739-920x600.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
-    </div>
   </div>
 </div>
 
 <script>
-let slideIndex = 1;
-showSlides(slideIndex);
+let slideIndex1 = 1;
+showSlides1(slideIndex1);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides1(n) {
+  showSlides1(slideIndex1 += n);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide1(n) {
+  showSlides1(slideIndex1 = n);
 }
 
-function showSlides(n) {
+function showSlides1(n) {
   let i;
   let slides = document.getElementsByClassName("mySlides1");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  let dots = document.getElementsByClassName("demo1");
+  let captionText = document.getElementById("caption1");
+  if (n > slides.length) {slideIndex1 = 1}
+  if (n < 1) {slideIndex1 = slides.length}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  slides[slideIndex1-1].style.display = "block";
+  dots[slideIndex1-1].className += " active";
+  captionText.innerHTML = dots[slideIndex1-1].alt;
 }
 </script>
     
@@ -388,101 +356,73 @@ function showSlides(n) {
     </video>
  <p>Esta caleta presenta una alta afluencia de público debido a la variedad gastronómica y de deportes nauticos que se desarrollan. Para realizar una óptima visualización se debe recorrer por el borde costero hacia el sur.</p>
            
-<body>
 
-<div class="container" style="margin: 0 auto;">
-  <div class="mySlides">
-    <div class="numbertext">1 / 6</div>
-    <img src="Burca/1500214739-920x600.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">2 / 6</div>
-    <img src="Burca/DSC_0351_351.JPG" style="width:100%">
+ <div class="container2"  style="margin: 0 auto;">
+  <div  class="mySlides2">
+    <div class="numbertext">1 / 3</div>
+    <img src="D:\Proyecto_Geoparque\82894759_1495878420581492_6732611040367869952_n.jpg" style="width:100%">
   </div>
 
-  <div class="mySlides">
-    <div class="numbertext">3 / 6</div>
-    <img src="Burca/IMG_3440.JPG" style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">4 / 6</div>
-    <img src="Burca/IMG_3436.JPG" style="width:100%">
+  <div  class="mySlides2">
+    <div class="numbertext">2 / 3</div>
+    <img src="D:\Proyecto_Geoparque\burca.jpg" style="width:100%">
   </div>
 
-  <div class="mySlides">
-    <div class="numbertext">5 / 6</div>
-    <img src="Burca/DJI_0353.JPG" style="width:100%">
+  <div  class="mySlides2">
+    <div class="numbertext">3 / 3</div>
+    <img src="D:\Proyecto_Geoparque\ingles.jpg" style="width:100%">
   </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">6 / 6</div>
-    <img src="Burca/1500214739-920x600.jpg" style="width:100%">
-  </div>
-    
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
+  
+  <a class="prev2" onclick="plusSlides2(-1)">❮</a>
+  <a class="next2" onclick="plusSlides2(1)">❯</a>
 
-  <div class="caption-container">
-    <p id="caption"></p>
+  <div id="caption-container" class="caption-container2">
+    <p id="caption2"></p>
   </div>
 
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="Burca/1500214739-920x600.jpg" style="width:100%" onclick="currentSlide(1)" title="The Woods">
+  <div class="row2">
+    <div class="column2">
+      <img class="demo1 cursor" src="Burca/DSC_0351_351.JPG" style="width:100%" onclick="currentSlide2(1)" alt="The Woods">
     </div>
-    <div class="column">
-      <img class="demo cursor" src="Burca/DSC_0351_351.JPG" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+    <div class="column2">
+      <img class="demo1 cursor" src="Burca/IMG_3436.JPG" style="width:100%" onclick="currentSlide2(2)" alt="Cinque Terre">
     </div>
-    <div class="column">
-      <img class="demo cursor" src="Burca/IMG_3440.JPG" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="Burca/IMG_3436.JPG" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="Burca/DJI_0353.JPG" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-    </div>    
-    <div class="column">
-      <img class="demo cursor" src="Burca/1500214739-920x600.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    <div class="column2">
+      <img class="demo2 cursor" src="Burca/IMG_3440.JPG" style="width:100%" onclick="currentSlide2(3)" alt="Mountains and fjords">
     </div>
   </div>
 </div>
 
 <script>
-let slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+  let slideIndex2 = 1;
+  showSlides2(slideIndex2);
+  
+  function plusSlides2(n) {
+    showSlides2(slideIndex2 += n);
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+  
+  function currentSlide2(n) {
+    showSlides2(slideIndex2 = n);
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-</script>
-    
-</body>
-</html>
+  
+  function showSlides2(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides2");
+    let dots = document.getElementsByClassName("demo2");
+    let captionText = document.getElementById("caption2");
+    if (n > slides.length) {slideIndex2 = 1}
+    if (n < 1) {slideIndex2 = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex2-1].style.display = "block";
+    dots[slideIndex2-1].className += " active";
+    captionText.innerHTML = dots[slideIndex2-1].alt;
+  }
+  </script>
             
             <p>Se observan acantilados con afloramientos de la Formación Curanilahue, donde se pueden reconocer niveles carbonaceos acuñados, terminación entre estratos tipo onlap y estructuras sedimentarias hummocky por lo que se hace idoneo este sitio para desarrollar temáticas sedimentológicas y estratigráficas. En la zona intermareal se pueden observar algunos escollos rocosos y plataforma de abrasión, además de aflorar 
 material metamórfico.</p>
@@ -495,101 +435,66 @@ material metamórfico.</p>
     </video>
  <p>El ingreso al sendero se realiza por una pequeña caleta de pescadores, hacia el norte y luego de recorrer unos 20 minutos se llega a los afloramientos más significativos de este punto, además se puede disfrutar de una playa con poca afluencia de público de arenas blancas.</p>
            
-<body>
 
-<div class="container" style="margin: 0 auto;">
-  <div class="mySlides">
-    <div class="numbertext">1 / 6</div>
-    <img src="Burca/1500214739-920x600.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <div class="numbertext">2 / 6</div>
-    <img src="Burca/DSC_0351_351.JPG" style="width:100%">
+ <div class="container3" style="margin: 0 auto;">
+  <div class="mySlides3">
+    <div class="numbertext">1 / 2</div>
+    <img src="D:\Proyecto_Geoparque\purema.jpg" style="width:100%">
   </div>
 
-  <div class="mySlides">
-    <div class="numbertext">3 / 6</div>
-    <img src="Burca/IMG_3440.JPG" style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">4 / 6</div>
-    <img src="Burca/IMG_3436.JPG" style="width:100%">
+  <div class="mySlides3">
+    <div class="numbertext">2 / 2</div>
+    <img src="D:\Proyecto_Geoparque\WhatsApp-Image-2019-01-01-at-21.19.221.jpeg" style="width:100%">
   </div>
 
-  <div class="mySlides">
-    <div class="numbertext">5 / 6</div>
-    <img src="Burca/DJI_0353.JPG" style="width:100%">
-  </div>
-    
-  <div class="mySlides">
-    <div class="numbertext">6 / 6</div>
-    <img src="Burca/1500214739-920x600.jpg" style="width:100%">
-  </div>
-    
-  <a class="prev" onclick="plusSlides(-1)">❮</a>
-  <a class="next" onclick="plusSlides(1)">❯</a>
+  <a class="prev3" onclick="plusSlides3(-1)">❮</a>
+  <a class="next3" onclick="plusSlides3(1)">❯</a>
 
-  <div class="caption-container">
-    <p id="caption"></p>
+  <div class="caption-container3">
+    <p id="caption3"></p>
   </div>
 
-  <div class="row">
-    <div class="column">
-      <img class="demo cursor" src="Burca/1500214739-920x600.jpg" style="width:100%" onclick="currentSlide(1)" title="The Woods">
+  <div class="row3">
+    <div class="column3">
+      <img class="demo3 cursor" src="Burca/IMG_3436.JPG" style="width:100%" onclick="currentSlide3(1)" alt="The Woods">
     </div>
-    <div class="column">
-      <img class="demo cursor" src="Burca/DSC_0351_351.JPG" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="Burca/IMG_3440.JPG" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="Burca/IMG_3436.JPG" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
-    </div>
-    <div class="column">
-      <img class="demo cursor" src="Burca/DJI_0353.JPG" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
-    </div>    
-    <div class="column">
-      <img class="demo cursor" src="Burca/1500214739-920x600.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+    <div class="column3">
+      <img class="demo3 cursor" src="IMG_3440.JPG" style="width:100%" onclick="currentSlide3(2)" alt="Cinque Terre">
     </div>
   </div>
 </div>
 
 <script>
-let slideIndex = 1;
-showSlides(slideIndex);
+let slideIndex3 = 1;
+showSlides3(slideIndex3);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides3(n) {
+  showSlides3(slideIndex3 += n);
 }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
+function currentSlide3(n) {
+  showSlides3(slideIndex3 = n);
 }
 
-function showSlides(n) {
+function showSlides3(n) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("demo");
-  let captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
+  let slides = document.getElementsByClassName("mySlides3");
+  let dots = document.getElementsByClassName("demo3");
+  let captionText = document.getElementById("caption3");
+  if (n > slides.length) {slideIndex3 = 1}
+  if (n < 1) {slideIndex3 = slides.length}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
+  slides[slideIndex3-1].style.display = "block";
+  dots[slideIndex3-1].className += " active";
+  captionText.innerHTML = dots[slideIndex3-1].alt;
 }
 </script>
-    
-</body>
-</html>
+
             
             <p>A lo largo del sendero se pueden ir identificando distintas litologías y estructuras  tanto sedimentarias como de deformación, en esta zona se pueden ver a lo menos 4 CGT que son el Complejo Metamórfico Paleozoico, Depósitos Sedimentarios del Maastrichtiano, Depósitos Parálicos del Paleógeno y morfoestructuras de Norde costero como acantilados, arcos, escollos rocosos y plataformas de abrasión. </p>
     
